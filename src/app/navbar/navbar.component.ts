@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   public logo = 'qwerty'
+  public image = '../assets/png/logo.png'
 }
