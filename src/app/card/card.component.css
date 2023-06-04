@@ -27,11 +27,11 @@ section .row .col .card .card-title .card-body button:hover{
 
 section .row .col .card{
     transition:transform 420ms ;
-}
+} 
 
-section .row .col .card:hover{
+ section .row .col .card:hover{
     transform: scale(1.05);
-}
+} 
 
 section .row .col .card img{
     max-width: 100%;
