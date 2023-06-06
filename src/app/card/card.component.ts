@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  constructor(private routes: Router) {
+
+  }
+  ngOnInit(){
+    
+  }
     Images = [
       {
         src:'../assets/Images/image1.jpg',
@@ -39,4 +47,7 @@ export class CardComponent {
       
       },
     ]
+    onclick(){
+      this.routes.navigateByUrl('login')
+    }
 }

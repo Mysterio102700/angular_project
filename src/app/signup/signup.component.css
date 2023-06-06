@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.container1{
+.container{
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -14,7 +10,6 @@
     border: 0.5px solid black;
     border-radius: 5px;
     background-color: rgb(200, 230, 220);
-    margin-left: 35%;
 }
 .container-details{
     display: flex;
@@ -24,18 +19,18 @@
 
 }
 
-.container1 .container-details input{
+.container .container-details input{
     margin: 10px;
     width: 50%;
     background-color: transparent;
 }
 
-.container1 .container-details input[type=submit]{
+.container .container-details input[type=submit]{
     margin: 10px;
     width:20%;
 }
 
-.container1 .container-image img{
+.container .container-image img{
     margin-top: 20px;
     width: 40%;
 }
@@ -53,7 +48,7 @@
     .login{
 margin-top: 40%;
     }
-    .container1{
+    .container{
         width: 95%;
     }
 }

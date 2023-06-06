@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-
+    public name = 'Remanth'
+    public Date = new Date()
+    
 }

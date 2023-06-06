@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SignupComponent } from './signup/signup.component';
+import { SignupModule } from './signup/signup.module';
 import { LoginModule } from './login/login.module';
+import { Card1Component } from './card1/card1.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +33,16 @@ import { LoginModule } from './login/login.module';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    SignupComponent,
+    Card1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    SignupModule,
+    LoginModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
