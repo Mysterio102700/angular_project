@@ -4,3 +4,10 @@
     margin-top: 6rem;
     margin-bottom: 4rem;
 }
+
+
+@media screen and (max-width:1200px) {
+    .faq{
+        margin-left: 0;
+    }
+}

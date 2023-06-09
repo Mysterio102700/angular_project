@@ -1,17 +1,18 @@
 <section class="mt-4 mx-4">
-  <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="row row-cols-1 row-cols-md-3 g-5">
     <div class="col" *ngFor="let img of Images">
-      <div class="card shadow-lg" data-aos="zoom-in" data-aos-duration="4000">
-        <img [src]="img.src" [alt]="img.alt"/>
-        <div class="card-title">
-          <h1>{{img.title}}</h1>
-          <div class="card-body">
-            <p>{{img.desc}}</p>
-            <button (click)="onclick()">{{img.button}}</button>
+      <a routerLink="juice/{{img.id}}">
+        <div class="card shadow-lg" data-aos="zoom-in" data-aos-duration="4000">
+          <img [src]="img.src" [alt]="img.alt" />
+          <div class="card-title">
+            <h1>{{ img.title }}</h1>
+            <div class="card-body">
+              <p>{{ img.desc }}</p>
+              <button>{{ img.button }}</button>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
-

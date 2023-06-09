@@ -3,18 +3,40 @@
     <div class="row">
       <h1>Signup</h1>
       <div class="container-image">
-        <img src="../../assets/png/login.png" alt="">
+        <img src="../../assets/png/login.png" alt="" />
       </div>
-      <div class="container-details">
-        <input type="email" name="" id="" placeholder="Email">
-        <input type="text" placeholder="Username"/>
-        <input type="password" placeholder="Password"/>
-        <input type="submit" value="Signup" />
-        <div class="sub">
-          <p>Already have a account !!</p>
-          <a routerLink="login">Login</a>
+      <form (ngSubmit)="Submit()">
+        <div class="container-details">
+          <input
+            class="form-control"
+            type="email"
+            name=""
+            id=""
+            name="Email"
+            placeholder="Email"
+            [(ngModel)]="reg.Email"
+          />
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Username"
+            name="Username"
+            [(ngModel)]="reg.Username"
+          />
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+            name="Password"
+            [(ngModel)]="reg.Password"
+          />
+          <button class="btn btn-outline-success">Signup</button>
+          <div class="sub">
+            <p>Already have a account !!</p>
+            <a routerLink="/login">Login</a>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </section>

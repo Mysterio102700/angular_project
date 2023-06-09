@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SignupModule } from './signup/signup.module';
 import { LoginModule } from './login/login.module';
 import { Card1Component } from './card1/card1.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +37,16 @@ import { Card1Component } from './card1/card1.component';
     LoginComponent,
     NavbarComponent,
     SignupComponent,
-    Card1Component
+    Card1Component,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SignupModule,
     LoginModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

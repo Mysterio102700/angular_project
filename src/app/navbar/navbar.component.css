@@ -1,0 +1,23 @@
+nav{
+    background-color: transparent;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+nav:hover{
+    background-color: black;
+}
+.nav-item a{
+    color: white;
+}
+.navbar-brand {
+    color: aqua;
+}
+
+@media screen and (max-width:1200px) {
+    nav{
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

@@ -1,20 +1,16 @@
 <app-nav></app-nav>
-<section class="login">
-  <div class="container1">
-    <div class="row">
-      <h1>Login</h1>
-      <div class="container-image">
-        <img src="../../assets/png/login.png" alt="">
-      </div>
-      <div class="container-details">
-        <input type="text" placeholder="Username"/>
-        <input type="password" placeholder="Password"/>
-        <input type="submit" value="Login" />
-        <div class="sub">
-          <p>Don't have an account ?</p>
-          <a routerLink="signup">signup</a>
-        </div>
-      </div>
+<section >
+    <div class="login">
+        <img src="../../assets/Images/login.png" height="100px" width="100px">
+        <h3>Login</h3>
+        <form >
+            <div class="details"> 
+                <input class='form-control ' name="Email" type="email" placeholder="Email">
+                <input  name="Password"  type="password" placeholder="Password"> 
+                <input type="button" name="" value="Login" >
+              </div> 
+            <p style="color: #59238F; text-align: center;"> <a routerLink="/signup"> Sign-Up</a></p>
+        </form> 
+        
     </div>
-  </div>
-</section>
+    </section>

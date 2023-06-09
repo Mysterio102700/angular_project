@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Registration } from '../Models/registration';
 
 @Component({
   selector: 'app-signup',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
+    reg:Registration = new Registration();
 
+    Submit(){
+      console.log(this.reg);
+    }
 }

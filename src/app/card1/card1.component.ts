@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FoodserviceService } from '../Services/foodservice.service';
-import { Foods } from '../Models/foods';
+import { JuicesservicesService } from '../Services/juicesservices.service';
+import { Juices } from '../Models/juices';
+
 
 @Component({
   selector: 'app-card1',
@@ -8,11 +9,11 @@ import { Foods } from '../Models/foods';
   styleUrls: ['./card1.component.css']
 })
 export class Card1Component {
+  public juices!:Juices[];
 
-  public foods!:Foods[];
-    constructor(private service:FoodserviceService){}
-
-    ngOnInit(){
-      this.service.getfoods().subscribe(data => this.foods=data);
-    }
+ constructor(private service:JuicesservicesService){}
+ 
+ ngOnInit():void{
+  this.service.getjucies().subscribe(data => this.juices = data)
+ }
 }
