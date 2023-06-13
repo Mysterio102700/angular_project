@@ -1,7 +1,7 @@
 <section class="mt-4 mx-4">
   <div class="row row-cols-1 row-cols-md-3 g-5">
     <div class="col" *ngFor="let img of Images">
-      <a routerLink="juice/{{img.id}}">
+      <a routerLink="{{img.title}}">
         <div class="card shadow-lg" data-aos="zoom-in" data-aos-duration="4000">
           <img [src]="img.src" [alt]="img.alt" />
           <div class="card-title">

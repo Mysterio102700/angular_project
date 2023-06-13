@@ -5,10 +5,27 @@
       <div class="container-image">
         <img src="../../assets/png/login.png" alt="" />
       </div>
-      <form (ngSubmit)="Submit()">
+      <form [formGroup]="registrationsform" (ngSubmit)="Submit()">
         <div class="container-details">
           <input
             class="form-control"
+            formControlName="Username"
+            type="text"
+            placeholder="Username"
+            name="Username"
+            [(ngModel)]="reg.Username"
+          />
+          <small
+            *ngIf="
+              registrationsform.controls['Username'].dirty &&
+              registrationsform.hasError('required', 'Username')
+            "
+            class="text-danger"
+            >Username contain atleast 6 characters
+          </small>
+          <input
+            class="form-control"
+            formControlName="Email"
             type="email"
             name=""
             id=""
@@ -16,20 +33,31 @@
             placeholder="Email"
             [(ngModel)]="reg.Email"
           />
+          <small
+            *ngIf="
+              registrationsform.controls['Email'].dirty &&
+              registrationsform.hasError('required', 'Email')
+            "
+            class="text-danger"
+            >Username contain atleast 6 characters
+          </small>
+
           <input
             class="form-control"
-            type="text"
-            placeholder="Username"
-            name="Username"
-            [(ngModel)]="reg.Username"
-          />
-          <input
-            class="form-control"
+            formControlName="Password"
             type="password"
             placeholder="Password"
             name="Password"
             [(ngModel)]="reg.Password"
           />
+          <small
+            *ngIf="
+              registrationsform.controls['Password'].dirty &&
+              registrationsform.hasError('required', 'Password')
+            "
+            class="text-danger"
+            >Username contain atleast 6 characters
+          </small>
           <button class="btn btn-outline-success">Signup</button>
           <div class="sub">
             <p>Already have a account !!</p>

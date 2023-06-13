@@ -1,0 +1,411 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Chocolate Milkshake",
+    "description": "Rich and creamy chocolate milkshake",
+    "ingredients": [
+      "chocolate ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate syrup"
+    ],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/chocolate-milkshake-with-pieces-chocolate-chip-cookies_434193-2888.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 2,
+    "name": "Strawberry Milkshake",
+    "description": "Sweet and fruity strawberry milkshake",
+    "ingredients": [
+      "strawberry ice cream",
+      "milk",
+      "whipped cream",
+      "strawberry syrup"
+    ],
+    "price": 55.0,
+    "availability": true,
+    "image": "https://img.freepik.com/free-photo/fresh-berries-cream-make-gourmet-dessert-generative-ai_188544-12071.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vanilla Milkshake",
+    "description": "Smooth and creamy vanilla milkshake",
+    "ingredients": [
+      "vanilla ice cream",
+      "milk",
+      "whipped cream",
+      "vanilla syrup"
+    ],
+    "price": 50.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/milkshake-with-chocolate-brick-wall-background_219193-3739.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 4,
+    "name": "Oreo Milkshake",
+    "description": "Indulgent Oreo cookie milkshake",
+    "ingredients": [
+      "vanilla ice cream",
+      "milk",
+      "whipped cream",
+      "Oreo cookies"
+    ],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/sweet-milkshake-with-whipped-cream_82893-18487.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 5,
+    "name": "Salted Caramel Milkshake",
+    "description": "Sweet and salty caramel milkshake",
+    "ingredients": [
+      "caramel ice cream",
+      "milk",
+      "whipped cream",
+      "caramel sauce"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://img.freepik.com/free-photo/glass-foamy-cold-coffee-with-biscuits-wooden-plate_114579-90906.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mint Chocolate Chip Milkshake",
+    "description": "Refreshing mint milkshake with chocolate chips",
+    "ingredients": [
+      "mint chocolate chip ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate chips"
+    ],
+    "price": 75.0,
+    "availability": true,
+    "image": "https://img.freepik.com/free-photo/cocoa-glass-table_23-2147985567.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 7,
+    "name": "Peanut Butter Milkshake",
+    "description": "Creamy peanut butter milkshake",
+    "ingredients": [
+      "peanut butter ice cream",
+      "milk",
+      "whipped cream",
+      "peanut butter"
+    ],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/healthy-breakfast-banana-almond-smoothie-with-cinnamon-oat-flakes-coconut-milk-glass-jars_633077-2120.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 8,
+    "name": "Cookies and Cream Milkshake",
+    "description": "Classic cookies and cream milkshake",
+    "ingredients": [
+      "cookies and cream ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate sandwich cookies"
+    ],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://img.freepik.com/free-photo/front-view-desserts-jars-with-biscuits-donuts_23-2148603231.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 9,
+    "name": "Coffee Milkshake",
+    "description": "Smooth and velvety coffee milkshake",
+    "ingredients": [
+      "coffee ice cream",
+      "milk",
+      "whipped cream",
+      "coffee syrup"
+    ],
+    "price": 55.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/chocolate-milkshake-served-clear-glass-dark-background-isolated-drink_322920-1875.jpg?size=626&ext=jp"
+  },
+  {
+    "id": 10,
+    "name": "Banana Milkshake",
+    "description": "Creamy banana milkshake",
+    "ingredients": ["banana ice cream", "milk", "whipped cream", "banana"],
+    "price": 50.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/banana-milkshake-white-board-vertical-format_91908-3429.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mixed Berry Milkshake",
+    "description": "Refreshing mixed berry milkshake",
+    "ingredients": [
+      "mixed berry ice cream",
+      "milk",
+      "whipped cream",
+      "mixed berries"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://img.freepik.com/free-photo/fresh-blueberry-yogurt-parfait-wooden-table-generative-ai_188544-8114.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 12,
+    "name": "Mango Milkshake",
+    "description": "Tropical mango milkshake",
+    "ingredients": ["mango ice cream", "milk", "whipped cream", "mango"],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/mango-lassi-with-mint-leaves-wooden-plate_771703-4345.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 13,
+    "name": "Blueberry Milkshake",
+    "description": "Creamy blueberry milkshake",
+    "ingredients": [
+      "blueberry ice cream",
+      "milk",
+      "whipped cream",
+      "blueberries"
+    ],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/purple-smoothie-jar-blue-background_23-2148227554.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 14,
+    "name": "Pistachio Milkshake",
+    "description": "Rich and nutty pistachio milkshake",
+    "ingredients": [
+      "pistachio ice cream",
+      "milk",
+      "whipped cream",
+      "pistachios"
+    ],
+    "price": 75.0,
+    "availability": true,
+    "image": "https://img.freepik.com/premium-photo/green-milkshake-with-green-white-striped-straw-sits-table-cup-green-tea_896008-154.jpg?size=626&ext=jpg"
+  },
+  {
+    "id": 15,
+    "name": "g  Milkshake",
+    "description": "Sweet and tangy raspberry milkshake",
+    "ingredients": [
+      "raspberry ice cream",
+      "milk",
+      "whipped cream",
+      "raspberries"
+    ],
+    "price": 55.0,
+    "availability": true,
+    "image": "https://example.com/raspberry-milkshake.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Caramel Macchiato Milkshake",
+    "description": "Indulgent caramel macchiato milkshake",
+    "ingredients": [
+      "caramel macchiato ice cream",
+      "milk",
+      "whipped cream",
+      "caramel sauce"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://example.com/caramel-macchiato-milkshake.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Peanut Butter Chocolate Milkshake",
+    "description": "Decadent peanut butter and chocolate milkshake",
+    "ingredients": [
+      "peanut butter ice cream",
+      "chocolate ice cream",
+      "milk",
+      "whipped cream",
+      "peanut butter cups"
+    ],
+    "price": 80.0,
+    "availability": true,
+    "image": "https://example.com/peanut-butter-chocolate-milkshake.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Mocha Milkshake",
+    "description": "Rich and chocolatey mocha milkshake",
+    "ingredients": [
+      "mocha ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate syrup",
+      "coffee syrup"
+    ],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://example.com/mocha-milkshake.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Hazelnut Milkshake",
+    "description": "Creamy and nutty hazelnut milkshake",
+    "ingredients": ["hazelnut ice cream", "milk", "whipped cream", "hazelnuts"],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://example.com/hazelnut-milkshake.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Cookies and Brownies Milkshake",
+    "description": "Decadent milkshake with cookies and brownies",
+    "ingredients": [
+      "vanilla ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate sandwich cookies",
+      "brownies"
+    ],
+    "price": 75.0,
+    "availability": true,
+    "image": "https://example.com/cookies-and-brownies-milkshake.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Caramel Banana Milkshake",
+    "description": "Creamy banana milkshake with caramel",
+    "ingredients": [
+      "banana ice cream",
+      "milk",
+      "whipped cream",
+      "banana",
+      "caramel sauce"
+    ],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://example.com/caramel-banana-milkshake.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Cherry Vanilla Milkshake",
+    "description": "Refreshing cherry vanilla milkshake",
+    "ingredients": [
+      "vanilla ice cream",
+      "milk",
+      "whipped cream",
+      "cherries",
+      "cherry syrup"
+    ],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://example.com/cherry-vanilla-milkshake.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Coconut Milkshake",
+    "description": "Creamy and tropical coconut milkshake",
+    "ingredients": [
+      "coconut ice cream",
+      "milk",
+      "whipped cream",
+      "coconut flakes"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://example.com/coconut-milkshake.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Pumpkin Spice Milkshake",
+    "description": "Fall-inspired pumpkin spice milkshake",
+    "ingredients": [
+      "pumpkin spice ice cream",
+      "milk",
+      "whipped cream",
+      "pumpkin spice syrup"
+    ],
+    "price": 65.0,
+    "availability": true,
+    "image": "https://example.com/pumpkin-spice-milkshake.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Blueberry Cheesecake Milkshake",
+    "description": "Creamy blueberry cheesecake milkshake",
+    "ingredients": [
+      "cheesecake ice cream",
+      "milk",
+      "whipped cream",
+      "blueberries",
+      "graham cracker crumbs"
+    ],
+    "price": 75.0,
+    "availability": true,
+    "image": "https://example.com/blueberry-cheesecake-milkshake.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Mint Oreo Milkshake",
+    "description": "Refreshing mint milkshake with Oreo cookies",
+    "ingredients": [
+      "mint chocolate chip ice cream",
+      "milk",
+      "whipped cream",
+      "Oreo cookies"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://example.com/mint-oreo-milkshake.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Mocha Almond Milkshake",
+    "description": "Rich mocha milkshake with almonds",
+    "ingredients": [
+      "mocha almond fudge ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate syrup",
+      "almonds"
+    ],
+    "price": 75.0,
+    "availability": true,
+    "image": "https://example.com/mocha-almond-milkshake.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Mango Coconut Milkshake",
+    "description": "Tropical mango coconut milkshake",
+    "ingredients": [
+      "mango ice cream",
+      "coconut milk",
+      "whipped cream",
+      "mango",
+      "coconut flakes"
+    ],
+    "price": 70.0,
+    "availability": true,
+    "image": "https://example.com/mango-coconut-milkshake.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Peach Milkshake",
+    "description": "Sweet and juicy peach milkshake",
+    "ingredients": ["peach ice cream", "milk", "whipped cream", "peach"],
+    "price": 60.0,
+    "availability": true,
+    "image": "https://example.com/peach-milkshake.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Black Forest Milkshake",
+    "description": "Indulgent black forest milkshake",
+    "ingredients": [
+      "black forest ice cream",
+      "milk",
+      "whipped cream",
+      "chocolate syrup",
+      "cherries"
+    ],
+    "price": 80.0,
+    "availability": true,
+    "image": "https://example.com/black-forest-milkshake.jpg"
+  }
+]
