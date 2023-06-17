@@ -14,7 +14,7 @@ export class MocktailslistComponent {
   constructor(private services:MocktailslistserviceService){}
 
   ngOnInit():void{
-    this.services.getMocktailslist().subscribe(data =>this.mocktailslist = data)
+    this.mocktailslist=this.services.getMocktailslistall()
   }
 
 }

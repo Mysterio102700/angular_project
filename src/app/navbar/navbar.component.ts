@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  public logo = 'qwerty'
+  public logo = 'JUCIFY'
   public image = '../assets/png/logo.png'
 }

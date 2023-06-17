@@ -25,6 +25,13 @@ import { JuiceslistComponent } from './juiceslist/juiceslist.component';
 import { MilkshakeslistComponent } from './milkshakeslist/milkshakeslist.component';
 import { MocktailslistComponent } from './mocktailslist/mocktailslist.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { Productdetails1Component } from './productdetails1/productdetails1.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { Productdetails2Component } from './productdetails2/productdetails2.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
+import { FrontComponent } from './front/front.component';
+import { PaymentComponent } from './payment/payment.component';
+import { SuccessComponent } from './success/success.component';
 
 
 @NgModule({
@@ -46,7 +53,14 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     JuiceslistComponent,
     MilkshakeslistComponent,
     MocktailslistComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    Productdetails1Component,
+    PagenotfoundComponent,
+    Productdetails2Component,
+    Navbar2Component,
+    FrontComponent,
+    PaymentComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,

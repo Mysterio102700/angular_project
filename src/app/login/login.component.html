@@ -1,16 +1,51 @@
-<app-nav></app-nav>
-<section >
-    <div class="login">
-        <img src="../../assets/Images/login.png" height="100px" width="100px">
-        <h3>Login</h3>
-        <form >
-            <div class="details"> 
-                <input class='form-control ' name="Email" type="email" placeholder="Email">
-                <input  name="Password"  type="password" placeholder="Password"> 
-                <input type="button" name="" value="Login" >
-              </div> 
-            <p style="text-align: center;"> <a routerLink="/signup"> Sign-Up</a></p>
-        </form> 
-        
-    </div>
-    </section>
+<app-navbar></app-navbar>
+<section>
+  <div class="login">
+    <img src="../../assets/Images/login.png" height="100px" width="100px" />
+    <h3>Signup</h3>
+    <form [formGroup]="loginform" (ngSubmit)="OnLogin()">
+      <div class="container-details">
+        <input
+          class="form-control"
+          formControlName="Email"
+          type="email"
+          name=""
+          id=""
+          name="Email"
+          placeholder="Email"
+          [(ngModel)]="login.Email"
+        />
+        <small
+          *ngIf="
+            loginform.controls['Email'].dirty &&
+            loginform.hasError('required', 'Email')
+          "
+          class="text-danger"
+          >Username contain atleast 6 characters
+        </small>
+
+        <input
+          class="form-control"
+          formControlName="Password"
+          type="password"
+          placeholder="Password"
+          name="Password"
+          [(ngModel)]="login.Password"
+        />
+        <small
+          *ngIf="
+            loginform.controls['Password'].dirty &&
+            loginform.hasError('required', 'Password')
+          "
+          class="text-danger"
+          >Username contain atleast 6 characters
+        </small>
+        <button class="btn btn-outline-success">Signup</button>
+        <div class="sub">
+          <p>Already have a account !!</p>
+          <a routerLink="/login">Login</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+section {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/Images/front.jpg');
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }

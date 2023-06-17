@@ -1,25 +1,318 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Juiceslist } from '../Models/juiceslist';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class JuiceslistserviceService {
+  constructor() {}
 
-  BaseUrl='assets/Data/Juices.json'
-
-  constructor(private http:HttpClient) { }
-  ngOnInit():void{}
-
-  getjuiceslist():Observable<Juiceslist[]>{
-      return this.http.get<Juiceslist[]>(`${this.BaseUrl}`)
+  getJuicelistId(id:number):Juiceslist{
+    return this.getJuicelistall().find(juice=>juice.id==id)!;
   }
 
-
-  
-  
-  
-
+  getJuicelistall(): Juiceslist[] {
+    return [
+      {
+        id: 1,
+        name: 'Orange Juice',
+        description: 'Freshly squeezed orange juice',
+        ingredients: ['oranges'],
+        price: 50.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/glass-orange-juice-placed-wood_1150-9666.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 2,
+        name: 'Apple Juice',
+        description: 'Cold-pressed apple juice',
+        ingredients: ['apples'],
+        price: 60.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/front-view-fresh-natural-delicious-juice-two-glasses-with-red-apple-limes-black-background_140725-140202.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 3,
+        name: 'Watermelon Juice',
+        description: 'Refreshing watermelon juice',
+        ingredients: ['watermelons'],
+        price: 80.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/cold-watermelon-smoothie-dark-background_1150-41818.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 4,
+        name: 'Carrot Juice',
+        description: 'Nutrient-rich carrot juice',
+        ingredients: ['carrots'],
+        price: 70.0,
+        availability: false,
+        image:
+          'https://img.freepik.com/premium-photo/glass-fresh-squeezed-carrot-juice-old-rustic-wooden-table_361360-4303.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 5,
+        name: 'Pineapple Juice',
+        description: 'Tropical pineapple juice',
+        ingredients: ['pineapples'],
+        price: 75.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/pineapple-juice_144627-22237.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 6,
+        name: 'Mango Juice',
+        description: 'Sweet and tangy mango juice',
+        ingredients: ['mangoes'],
+        price: 65.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/mango-shake-fresh-tropical-fruit-smoothies_501050-907.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 7,
+        name: 'Grape Juice',
+        description: 'Refreshing grape juice',
+        ingredients: ['grapes'],
+        price: 55.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/side-view-black-grape-juice-glass-with-grapes-basket-gray-background_141793-27306.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 8,
+        name: 'Strawberry Juice',
+        description: 'Delicious strawberry juice',
+        ingredients: ['strawberries'],
+        price: 70.0,
+        availability: false,
+        image:
+          'https://img.freepik.com/premium-photo/strawberry-smoothie-glass-with-straw-fresh-berries_166342-580.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 9,
+        name: 'Banana Juice',
+        description: 'Creamy banana juice',
+        ingredients: ['bananas'],
+        price: 45.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/premium-photo/banana-smoothie-banana-milkshake-wooden-table_97245-2.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 10,
+        name: 'Cucumber Juice',
+        description: 'Refreshing cucumber juice',
+        ingredients: ['cucumbers'],
+        price: 55.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/glass-fresh-cucumber-juice-dark-background_1150-45045.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 11,
+        name: 'Tomato Juice',
+        description: 'Fresh tomato juice',
+        ingredients: ['tomatoes'],
+        price: 60.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/fresh-tomato-juice-ready-serve_1150-38314.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 12,
+        name: 'Pomegranate Juice',
+        description: 'Healthy pomegranate juice',
+        ingredients: ['pomegranates'],
+        price: 75.0,
+        availability: false,
+        image:
+          'https://img.freepik.com/free-photo/glass-juice-pomegranate-marble-table_114579-20301.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 13,
+        name: 'Lemonade',
+        description: 'Refreshing lemonade',
+        ingredients: ['lemons', 'sugar', 'water'],
+        price: 40.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/mojito-drink-with-lime-lemon-mint-wood-table_1150-12269.jpg?size=626&ext=jpgw',
+      },
+      {
+        id: 14,
+        name: 'Papaya Juice',
+        description: 'Tropical papaya juice',
+        ingredients: ['papayas'],
+        price: 65.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/premium-photo/glass-fresh-lemonade-wooden-table_123827-21262.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 15,
+        name: 'Beetroot Juice',
+        description: 'Healthy beetroot juice',
+        ingredients: ['beetroots'],
+        price: 70.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/wooden-tray-with-glass-beetroot-juice_23-2148306937.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 16,
+        name: 'Cranberry Juice',
+        description: 'Tart cranberry juice',
+        ingredients: ['cranberries'],
+        price: 60.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/front-view-fresh-cranberry-juice-inside-can-dark-bar-fruit-photo-cocktail-color-drink-berry_140725-92845.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 17,
+        name: 'Blueberry Juice',
+        description: 'Antioxidant-rich blueberry juice',
+        ingredients: ['blueberries'],
+        price: 80.0,
+        availability: false,
+        image:
+          'https://img.freepik.com/free-photo/homemade-fresh-fruit-smoothies-portrait-summer-fresh-fruit-drink_1150-37804.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 18,
+        name: 'Ginger Lemon Juice',
+        description: 'Refreshing ginger lemon juice',
+        ingredients: ['ginger', 'lemons', 'sugar', 'water'],
+        price: 50.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/high-angle-lemon-grapefruit-arrangement_23-2148858657.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 19,
+        name: 'Kiwi Juice',
+        description: 'Exotic kiwi juice',
+        ingredients: ['kiwis'],
+        price: 65.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/glasses-kiwi-juice-put-wooden-cutting-board_1150-28138.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 20,
+        name: 'Mint Lime Juice',
+        description: 'Cooling mint lime juice',
+        ingredients: ['mint leaves', 'limes', 'sugar', 'water'],
+        price: 55.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/mojito-drink-with-lime-lemon-mint-wood-table_1150-12269.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 21,
+        name: 'Cantaloupe Juice',
+        description: 'Sweet cantaloupe juice',
+        ingredients: ['cantaloupes'],
+        price: 75.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/glass-pumpkin-juice-chopped-raw-pumpkins-place-dark-floor_1150-35209.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 22,
+        name: 'Lychee Juice',
+        description: 'Juicy lychee juice',
+        ingredients: ['lychees'],
+        price: 70.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/lychee-juice-lychee-fruit_1150-13633.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 23,
+        name: 'Mixed Berry Juice',
+        description: 'Blend of mixed berries',
+        ingredients: ['strawberries', 'blueberries', 'raspberries'],
+        price: 85.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/premium-photo/two-glasses-smoothies-with-green-leaf-them_802668-1516.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 24,
+        name: 'Mint Watermelon Juice',
+        description: 'Refreshing mint watermelon juice',
+        ingredients: ['watermelons', 'mint leaves', 'sugar', 'water'],
+        price: 75.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/fresh-fruit-smoothies-homemade-watermelon-lemonade-portrait-summer-fresh-fruit-drink_1150-37806.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 25,
+        name: 'Guava Juice',
+        description: 'Tropical guava juice',
+        ingredients: ['guavas'],
+        price: 60.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/premium-photo/red-guava-juice-is-served-wooden-background-with-guava-fruit-slices-leaf-decorations_448865-1569.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 26,
+        name: 'Passion Fruit Juice',
+        description: 'Exotic passion fruit juice',
+        ingredients: ['passion fruits'],
+        price: 80.0,
+        availability: false,
+        image:
+          'https://img.freepik.com/free-photo/jar-passion-fruit-juice-fresh-passion-fruit-cut-half-place-dark-floor_1150-35258.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 27,
+        name: 'Mint Pineapple Juice',
+        description: 'Refreshing mint pineapple juice',
+        ingredients: ['pineapples', 'mint leaves', 'sugar', 'water'],
+        price: 70.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/pineapple-smoothie_1205-773.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 28,
+        name: 'Cherry Juice',
+        description: 'Tart cherry juice',
+        ingredients: ['cherries'],
+        price: 75.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/delicious-detox-drink-with-cherries_23-2148683572.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 29,
+        name: 'Raspberry Juice',
+        description: 'Delicious raspberry juice',
+        ingredients: ['raspberries'],
+        price: 65.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/mulberry-juice-health-reduce-cholesterol-control-blood-sugar-antioxidants-nourish-brain-cancer-prevention-stimulates-blood-flow_1150-45687.jpg?size=626&ext=jpg',
+      },
+      {
+        id: 30,
+        name: 'Mint Kiwi Juice',
+        description: 'Refreshing mint kiwi juice',
+        ingredients: ['kiwis', 'mint leaves', 'sugar', 'water'],
+        price: 70.0,
+        availability: true,
+        image:
+          'https://img.freepik.com/free-photo/glasses-kiwi-juice-put-wooden-cutting-board_1150-28137.jpg?size=626&ext=jpg',
+      },
+    ];
+  }
 }

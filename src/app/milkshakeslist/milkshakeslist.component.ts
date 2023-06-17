@@ -12,7 +12,7 @@ export class MilkshakeslistComponent {
 constructor(private services:MilkshakeslistserviceService){}
 
 ngOnInit():void{
-  this.services.getMilkshakeslist().subscribe(data => this.milkshakeslist = data)
+  this.milkshakeslist=this.services.getMilkshakeslistall()
 }
 
 }

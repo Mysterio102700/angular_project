@@ -19,6 +19,11 @@ export class SignupComponent {
   constructor(private formbuild: FormBuilder) {}
 
   ngOnInit() {
+ 
+
+      
+ 
+  
     this.registrationsform = this.formbuild.group({
       Username: new FormControl(
         '',

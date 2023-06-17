@@ -1,0 +1,15 @@
+<app-navbar2></app-navbar2>
+<section>
+    <div class="container1 mt-5">
+        <div class="container-image">
+            <img [src]="details.image" alt="" data-aos="fade-right">
+        </div>
+        <div class="container-content" >
+            <h1 class="text-shadow-lg" data-aos="fade-down">{{details.name}}</h1>
+            <p data-aos="fade-down"><span>#{{details.description}}</span></p>
+            <p data-aos="fade-down">Ingredients: <span>{{details.ingredients}}</span></p>
+            <p data-aos="fade-down">Price: <span>{{ details.price.toString() | currency: 'INR' }}</span></p>
+            <input data-aos="fade-down" type="button" name="" value="Buy Now" >
+        </div>
+    </div>
+</section>

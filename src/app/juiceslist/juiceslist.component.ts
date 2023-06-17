@@ -9,12 +9,13 @@ import { JuiceslistserviceService } from '../Services/juiceslistservice.service'
 })
 export class JuiceslistComponent {
 
-  juiceslist!:Juiceslist[];
+  juiceslist:Juiceslist[]=[];
 
   constructor(private services:JuiceslistserviceService){}
 
   ngOnInit(){
-    this.services.getjuiceslist().subscribe(data => this.juiceslist = data)
+    this.juiceslist=this.services.getJuicelistall();
   }
 
 }
+ 
